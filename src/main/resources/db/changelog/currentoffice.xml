@@ -1,0 +1,63 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+    <!-- Add your change sets here -->
+    <changeSet id="3" author="vinayvarma">
+        <createTable tableName="currentoffice">
+            <column name="id" type="int" autoIncrement="true" startWith="200" incrementBy="1">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="address" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="location_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="currentoffice" baseColumnNames="location_id" constraintName="fk_currentoff_locid" referencedTableName="location"
+                                 referencedColumnNames="id"/>
+
+    </changeSet>
+    <changeSet id="3.1" author="vinayvarma">
+        <addForeignKeyConstraint baseTableName="currentoffice" baseColumnNames="location_id" constraintName="fk_currentoff_locid1" referencedTableName="location"
+                                  referencedColumnNames="id" onDelete="CASCADE"/>
+
+    </changeSet>
+    <changeSet id="3.2" author="vinayvarma">
+
+        <insert tableName="currentoffice">
+            <column name="address" value="Madhurawada"/>
+            <column name="location_id" value="119"/>
+        </insert>
+
+
+        <insert tableName="currentoffice">
+            <column name="address" value="seethamadhara"/>
+            <column name="location_id" value="120"/>
+        </insert>
+
+        <insert tableName="currentoffice">
+            <column name="address" value="gajuwaka"/>
+            <column name="location_id" value="121"/>
+        </insert>
+
+        <insert tableName="currentoffice">
+            <column name="address" value="venkojipalem"/>
+            <column name="location_id" value="122"/>
+        </insert>
+
+
+        <insert tableName="currentoffice">
+            <column name="address" value="Jagadamba"/>
+            <column name="location_id" value="117"/>
+        </insert>
+
+
+        <insert tableName="currentoffice">
+            <column name="address" value="Maddilapalem"/>
+            <column name="location_id" value="118"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

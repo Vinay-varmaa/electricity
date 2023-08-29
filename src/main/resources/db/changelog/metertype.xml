@@ -1,0 +1,36 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+    <!-- Add your change sets here -->
+    <changeSet id="1" author="vinayvarma">
+        <createTable tableName="metertype">
+            <column name="id" type="int" autoIncrement="true" startWith="1" incrementBy="1">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(30)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="1.1" author="vinayvarma">
+        <addColumn tableName="metertype">
+            <column name="rate_per_unit" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="1.2" author="vinayvarma">
+        <insert tableName="metertype">
+            <column name="name" value="commercial meter"/>
+            <column name="rate_per_unit" value="10"/>
+        </insert>
+        <insert tableName="metertype">
+            <column name="name" value="normal meter"/>
+            <column name="rate_per_unit" value="8"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

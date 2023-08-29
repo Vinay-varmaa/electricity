@@ -1,0 +1,11 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+    <!-- Add your change sets here -->
+    <include file="classpath:db/changelog/metertype.xml"/>
+    <include file="classpath:db/changelog/location.xml"/>
+    <include file="classpath:db/changelog/currentoffice.xml"/>
+    <include file="classpath:db/changelog/meterreading.xml"/>
+    <include file="classpath:db/changelog/bill.xml"/>
+</databaseChangeLog>
