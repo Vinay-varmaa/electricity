@@ -3,6 +3,7 @@ package bill.management.electricity.contollers;
 import bill.management.electricity.entities.MeterReading;
 import bill.management.electricity.entities.MeterType;
 import bill.management.electricity.rest.MeterReadingRepo;
+import bill.management.electricity.service.MeterReadingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,9 @@ import java.util.List;
 public class MeterReadingController {
     @Autowired
     private MeterReadingRepo meterReadingRepo;
+
+    @Autowired
+    private MeterReadingService meterReadingService;
 
     @GetMapping("/getMeterReading")
     public List<MeterReading>getAllMeterReadings(){
@@ -27,15 +31,8 @@ public class MeterReadingController {
     }
 
     @PutMapping("/updateReading")
-    public MeterReading updateMeterReading(@RequestParam() int id, @RequestParam() int units) {
-        var meter_readingid = meterReadingRepo.findById(id);
-        if (meter_readingid.isPresent()) {
-            var type = meter_readingid.get();
-            type.setUnits(units);
-            meterReadingRepo.save(type);
-            return type;
-        } else
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "MeterType not found with the given id");
+    public MeterReading updateMeterReading(@RequestParam("id") int id, @RequestParam("units") int units) {
+        return meterReadingService.getMeterReadings(id, units);
     }
 
 }

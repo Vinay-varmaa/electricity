@@ -1,6 +1,7 @@
 package bill.management.electricity.contollers;
 
 import bill.management.electricity.rest.*;
+import bill.management.electricity.service.BillService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,19 +21,11 @@ public class Controller {
     @Autowired
     private MeterTypeRepo meterTypeRepo;
 
+    @Autowired
+    private BillService billService;
+
     @GetMapping("/generate/bill")
-    public double getBill(@RequestParam int distance, @RequestParam int meterType)
-    {
-        var meters = locationRepo.getLocation(distance,meterType);
-        if(meters.isEmpty())
-        {
-            if(meterType==1)
-                return distance*15;
-            else
-                return distance*10;
-        }
-        return billRepo.getBills(meters.get(1));
+    public double getBill(@RequestParam int distance, @RequestParam int meterType){
+        return billService.generateBill(distance, meterType);
     }
-
-
 }

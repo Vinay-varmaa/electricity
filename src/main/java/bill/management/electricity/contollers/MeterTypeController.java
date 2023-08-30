@@ -2,6 +2,7 @@ package bill.management.electricity.contollers;
 
 import bill.management.electricity.entities.MeterType;
 import bill.management.electricity.rest.MeterTypeRepo;
+import bill.management.electricity.service.MeterTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -15,10 +16,8 @@ public class MeterTypeController {
     @Autowired
     private MeterTypeRepo meterTypeRepo;
 
-    @GetMapping("/getMeterTypes")
-    public List<MeterType> getAllMeterTypes() {
-        return meterTypeRepo.findAll();
-    }
+    @Autowired
+    private MeterTypeService meterTypeService;
 
     @PostMapping("/addMeterTypes")
     public MeterType addMeterType(@RequestBody MeterType meterType) {
@@ -27,15 +26,15 @@ public class MeterTypeController {
     }
 
     @PutMapping("/updateTypes")
-    public MeterType updateMeterType(@RequestParam() int id, @RequestParam() int rate) {
+    public MeterType updateMeterType(@RequestParam() int id, @RequestParam() int rate)  {
         var meterid = meterTypeRepo.findById(id);
-        if (meterid.isPresent()) {
+        if (meterid.isEmpty()) {
             var type = meterid.get();
             type.setRate(rate);
             meterTypeRepo.save(type);
             return type;
         } else
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "MeterType not found with the given id");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"MeterType not found with the given id");
     }
 
     @DeleteMapping("/deleteMeterType")
@@ -46,6 +45,11 @@ public class MeterTypeController {
             return "Successfully Deleted";
         } else
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND,"this type id is not found");
+    }
+
+    @GetMapping("/findMeters")
+    public List<MeterType> findAllMeters(){
+        return meterTypeService.getAllMeters();
     }
 
 }
