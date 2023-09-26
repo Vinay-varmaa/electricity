@@ -1,0 +1,22 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+<!--    <changeSet id="6" author="vinayvarma">-->
+<!--    <createTable tableName="praveen">-->
+<!--        <column name="id" type="int" autoIncrement="true" startWith="300" incrementBy="1">-->
+<!--            <constraints primaryKey="1"/>-->
+<!--        </column>-->
+<!--        <column name="reading_id" type="int">-->
+<!--            <constraints nullable="false"/>-->
+<!--        </column>-->
+<!--        <column name="total_amount" type="int">-->
+<!--            <constraints nullable="false"/>-->
+<!--        </column>-->
+<!--    </createTable>-->
+<!--        <rollback>-->
+<!--            <dropTable tableName="praveen"/>-->
+<!--        </rollback>-->
+<!--    </changeSet>-->
+<!--</databaseChangeLog>-->

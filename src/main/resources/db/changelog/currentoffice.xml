@@ -48,10 +48,10 @@
         </insert>
 
 
-        <insert tableName="currentoffice">
-            <column name="address" value="Jagadamba"/>
-            <column name="location_id" value="117"/>
-        </insert>
+<!--        <insert tableName="currentoffice">-->
+<!--            <column name="address" value="Jagadamba"/>-->
+<!--            <column name="location_id" value="117"/>-->
+<!--        </insert>-->
 
 
         <insert tableName="currentoffice">

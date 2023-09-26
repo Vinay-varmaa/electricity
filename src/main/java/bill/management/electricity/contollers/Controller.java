@@ -1,8 +1,10 @@
 package bill.management.electricity.contollers;
 
+import bill.management.electricity.exception.MeterTypeidNotFound;
 import bill.management.electricity.rest.*;
 import bill.management.electricity.service.BillService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,7 +27,8 @@ public class Controller {
     private BillService billService;
 
     @GetMapping("/generate/bill")
-    public double getBill(@RequestParam int distance, @RequestParam int meterType){
+    @PreAuthorize("hasAuthority('ROLE_USER')")
+    public double getBill(@RequestParam int distance, @RequestParam int meterType) throws MeterTypeidNotFound {
         return billService.generateBill(distance, meterType);
     }
 }

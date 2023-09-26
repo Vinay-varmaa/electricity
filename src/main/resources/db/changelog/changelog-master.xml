@@ -8,4 +8,5 @@
     <include file="classpath:db/changelog/currentoffice.xml"/>
     <include file="classpath:db/changelog/meterreading.xml"/>
     <include file="classpath:db/changelog/bill.xml"/>
+<!--    <include file="classpath:db/changelog/change-set.xml"/>-->
 </databaseChangeLog>

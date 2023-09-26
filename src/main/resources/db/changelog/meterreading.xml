@@ -37,57 +37,45 @@
 
     <changeSet id="4.2" author="vinayvarma">
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-06-01"/>
             <column name="units_consumed" value="100"/>
-            <column name="cur_off_id" value="200"/>
+            <column name="cur_off_id" value="210"/>
             <column name="metertype_id" value="1"/>
         </insert>
 
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-06-02"/>
             <column name="units_consumed" value="110"/>
-            <column name="cur_off_id" value="201"/>
+            <column name="cur_off_id" value="211"/>
             <column name="metertype_id" value="2"/>
         </insert>
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-07-01"/>
             <column name="units_consumed" value="120"/>
-            <column name="cur_off_id" value="202"/>
+            <column name="cur_off_id" value="212"/>
             <column name="metertype_id" value="1"/>
         </insert>
 
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-06-05"/>
             <column name="units_consumed" value="130"/>
-            <column name="cur_off_id" value="203"/>
+            <column name="cur_off_id" value="213"/>
             <column name="metertype_id" value="1"/>
         </insert>
 
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-07-01"/>
             <column name="units_consumed" value="100"/>
-            <column name="cur_off_id" value="204"/>
+            <column name="cur_off_id" value="214"/>
             <column name="metertype_id" value="2"/>
         </insert>
 
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-06-01"/>
             <column name="units_consumed" value="120"/>
-            <column name="cur_off_id" value="205"/>
+            <column name="cur_off_id" value="210"/>
             <column name="metertype_id" value="1"/>
         </insert>
         <insert tableName="meterreading">
-            <column name="reading_date" value="2023-06-01"/>
             <column name="units_consumed" value="100"/>
-            <column name="cur_off_id" value="200"/>
+            <column name="cur_off_id" value="212"/>
             <column name="metertype_id" value="2"/>
         </insert>
 
-    </changeSet>
-
-    <changeSet id="4.3" author="vinayvarma">
-
-        <dropColumn tableName="meterreading" columnName="reading_date"/>
     </changeSet>
 
 </databaseChangeLog>

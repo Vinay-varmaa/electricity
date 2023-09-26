@@ -1,3 +1,5 @@
+
+
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
@@ -24,69 +26,49 @@
                                  referencedColumnNames="id" onDelete="CASCADE"/>
     </changeSet>
 
-    <changeSet id="5.1" author="vinayvarma">
+<!--    <changeSet id="5.1" author="vinayvarma">-->
 
-        <insert tableName="bill">
-            <column name="reading_id" value="200"/>
-            <column name="total_amount" value="1000"/>
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="205"/>-->
+<!--            <column name="total_amount" value="1000"/>-->
 
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="201"/>
-            <column name="total_amount" value="880"/>
+<!--        </insert>-->
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="206"/>-->
+<!--            <column name="total_amount" value="880"/>-->
 
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="202"/>
-            <column name="total_amount" value="1200"/>
+<!--        </insert>-->
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="207"/>-->
+<!--            <column name="total_amount" value="1200"/>-->
 
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="203"/>
-            <column name="total_amount" value="1300"/>
+<!--        </insert>-->
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="208"/>-->
+<!--            <column name="total_amount" value="1300"/>-->
 
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="204"/>
-            <column name="total_amount" value="800"/>
+<!--        </insert>-->
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="209"/>-->
+<!--            <column name="total_amount" value="800"/>-->
 
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="205"/>
-            <column name="total_amount" value="1200"/>
+<!--        </insert>-->
+<!--        <insert tableName="bill">-->
+<!--            <column name="reading_id" value="210"/>-->
+<!--            <column name="total_amount" value="1200"/>-->
 
-        </insert> <insert tableName="bill">
-        <column name="reading_id" value="206"/>
-        <column name="total_amount" value="800"/>
+<!--        </insert> <insert tableName="bill">-->
+<!--        <column name="reading_id" value="211"/>-->
+<!--        <column name="total_amount" value="800"/>-->
 
-    </insert>
-    </changeSet>
-    <changeSet id="5.4" author="vinayvarma">
-        <delete tableName="bill"/>
-    </changeSet>
+<!--    </insert>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="5.4" author="vinayvarma">-->
+<!--        <delete tableName="bill"/>-->
+<!--    </changeSet>-->
 
     <changeSet id="5.5" author="vinayvarma">
 
-        <insert tableName="bill">
-            <column name="reading_id" value="201"/>
-            <column name="total_amount" value="200"/>
-
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="202"/>
-            <column name="total_amount" value="250"/>
-
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="203"/>
-            <column name="total_amount" value="300"/>
-
-        </insert>
-        <insert tableName="bill">
-            <column name="reading_id" value="204"/>
-            <column name="total_amount" value="250"/>
-
-        </insert>
         <insert tableName="bill">
             <column name="reading_id" value="205"/>
             <column name="total_amount" value="200"/>
@@ -94,10 +76,40 @@
         </insert>
         <insert tableName="bill">
             <column name="reading_id" value="206"/>
+            <column name="total_amount" value="250"/>
+
+        </insert>
+        <insert tableName="bill">
+            <column name="reading_id" value="207"/>
+            <column name="total_amount" value="300"/>
+
+        </insert>
+        <insert tableName="bill">
+            <column name="reading_id" value="208"/>
+            <column name="total_amount" value="250"/>
+
+        </insert>
+        <insert tableName="bill">
+            <column name="reading_id" value="209"/>
+            <column name="total_amount" value="200"/>
+
+        </insert>
+        <insert tableName="bill">
+            <column name="reading_id" value="210"/>
             <column name="total_amount" value="150"/>
 
     </insert>
     </changeSet>
 
-
+<!--    <changeSet id="5.3" author="vinayvarma">-->
+<!--        <addColumn tableName="bill">-->
+<!--            <column name="distance" type="int">-->
+<!--            </column>-->
+<!--        </addColumn>-->
+<!--        <rollback>-->
+<!--            <dropColumn tableName="bill">-->
+<!--                <column name="distance"/>-->
+<!--            </dropColumn>-->
+<!--        </rollback>-->
+<!--    </changeSet>-->
 </databaseChangeLog>

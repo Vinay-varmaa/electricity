@@ -31,98 +31,98 @@
                                   referencedColumnNames="id"/>
     </changeSet>
 
-    <changeSet id="2.2" author="vinayvarma">
-        <insert tableName="location">
-            <column name="name" value="house1"/>
-            <column name="address" value="Jagadamba"/>
-            <column name="dist_from_off" value="5"/>
-            <column name="meter_id" value="2"/>
-        </insert>
-        <insert tableName="location">
-            <column name="name" value="house2"/>
-            <column name="address" value="Maddilapalem"/>
-            <column name="dist_from_off" value="4"/>
-            <column name="meter_id" value="2"/>
-        </insert>
+<!--    <changeSet id="2.2" author="vinayvarma">-->
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="house1"/>-->
+<!--            <column name="address" value="Jagadamba"/>-->
+<!--            <column name="dist_from_off" value="5"/>-->
+<!--            <column name="meter_id" value="2"/>-->
+<!--        </insert>-->
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="house2"/>-->
+<!--            <column name="address" value="Maddilapalem"/>-->
+<!--            <column name="dist_from_off" value="4"/>-->
+<!--            <column name="meter_id" value="2"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop1"/>
-            <column name="address" value="Madhurawada"/>
-            <column name="dist_from_off" value="5"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop1"/>-->
+<!--            <column name="address" value="Madhurawada"/>-->
+<!--            <column name="dist_from_off" value="5"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop2"/>
-            <column name="address" value="Madhurawada"/>
-            <column name="dist_from_off" value="6"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop2"/>-->
+<!--            <column name="address" value="Madhurawada"/>-->
+<!--            <column name="dist_from_off" value="6"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop3"/>
-            <column name="address" value="Jagadamba"/>
-            <column name="dist_from_off" value="3"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop3"/>-->
+<!--            <column name="address" value="Jagadamba"/>-->
+<!--            <column name="dist_from_off" value="3"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="house3"/>
-            <column name="address" value="Maddilapalem"/>
-            <column name="dist_from_off" value="4"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="house3"/>-->
+<!--            <column name="address" value="Maddilapalem"/>-->
+<!--            <column name="dist_from_off" value="4"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-    </changeSet>
+<!--    </changeSet>-->
 
-    <changeSet id="2.3" author="vinayvarma">
-        <delete tableName="location"/>
-    </changeSet>
+<!--    <changeSet id="2.3" author="vinayvarma">-->
+<!--        <delete tableName="location"/>-->
+<!--    </changeSet>-->
 
-    <changeSet id="2.4" author="vinayvarma">
-        <insert tableName="location">
-        <column name="name" value="house1"/>
-        <column name="address" value="Jagadamba"/>
-        <column name="dist_from_off" value="5"/>
-        <column name="meter_id" value="2"/>
-    </insert>
-        <insert tableName="location">
-            <column name="name" value="house2"/>
-            <column name="address" value="Maddilapalem"/>
-            <column name="dist_from_off" value="4"/>
-            <column name="meter_id" value="2"/>
-        </insert>
+<!--    <changeSet id="2.4" author="vinayvarma">-->
+<!--        <insert tableName="location">-->
+<!--        <column name="name" value="house1"/>-->
+<!--        <column name="address" value="Jagadamba"/>-->
+<!--        <column name="dist_from_off" value="5"/>-->
+<!--        <column name="meter_id" value="2"/>-->
+<!--    </insert>-->
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="house2"/>-->
+<!--            <column name="address" value="Maddilapalem"/>-->
+<!--            <column name="dist_from_off" value="4"/>-->
+<!--            <column name="meter_id" value="2"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop1"/>
-            <column name="address" value="Madhurawada"/>
-            <column name="dist_from_off" value="5"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop1"/>-->
+<!--            <column name="address" value="Madhurawada"/>-->
+<!--            <column name="dist_from_off" value="5"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop2"/>
-            <column name="address" value="Madhurawada"/>
-            <column name="dist_from_off" value="6"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop2"/>-->
+<!--            <column name="address" value="Madhurawada"/>-->
+<!--            <column name="dist_from_off" value="6"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="shop3"/>
-            <column name="address" value="Jagadamba"/>
-            <column name="dist_from_off" value="3"/>
-            <column name="meter_id" value="1"/>
-        </insert>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="shop3"/>-->
+<!--            <column name="address" value="Jagadamba"/>-->
+<!--            <column name="dist_from_off" value="3"/>-->
+<!--            <column name="meter_id" value="1"/>-->
+<!--        </insert>-->
 
-        <insert tableName="location">
-            <column name="name" value="house3"/>
-            <column name="address" value="Maddilapalem"/>
-            <column name="dist_from_off" value="4"/>
-            <column name="meter_id" value="2"/>
-        </insert>
-    </changeSet>
+<!--        <insert tableName="location">-->
+<!--            <column name="name" value="house3"/>-->
+<!--            <column name="address" value="Maddilapalem"/>-->
+<!--            <column name="dist_from_off" value="4"/>-->
+<!--            <column name="meter_id" value="2"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
 
-    <changeSet id="2.6" author="vinayvarma">
+    <changeSet id="insert" author="vinayvarma">
         <insert tableName="location">
             <column name="name" value="house1"/>
             <column name="address" value="Jagadamba"/>
@@ -165,68 +165,68 @@
         </insert>
     </changeSet>
 
-    <changeSet id="2.5" author="vinayvarma">
-        <delete tableName="location"/>
+<!--    <changeSet id="2.5" author="vinayvarma">-->
+<!--        <delete tableName="location"/>-->
 
-    </changeSet>
+<!--    </changeSet>-->
 
-    <changeSet id="2.7" author="vinayvarma">
-        <addColumn tableName="location">
-            <column name="meter_reading_id" type="int"/>
-        </addColumn>
-        <addForeignKeyConstraint baseTableName="location" baseColumnNames="meter_reading_id" constraintName="fk_location_meterreadingid" referencedTableName="meterreading"
-                                 referencedColumnNames="id"/>
-    </changeSet>
-    <changeSet id="2.8" author="vinayvarma">
+<!--    <changeSet id="2.7" author="vinayvarma">-->
+<!--        <addColumn tableName="location">-->
+<!--            <column name="meter_reading_id" type="int"/>-->
+<!--        </addColumn>-->
+<!--        <addForeignKeyConstraint baseTableName="location" baseColumnNames="meter_reading_id" constraintName="fk_location_meterreadingid" referencedTableName="meterreading"-->
+<!--                                 referencedColumnNames="id"/>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="2.8" author="vinayvarma">-->
 
-        <dropForeignKeyConstraint baseTableName="location" constraintName="fk_location_meterreadingid"/>
-        <dropColumn tableName="location" columnName="meter_reading_id"/>
-    </changeSet>
+<!--        <dropForeignKeyConstraint baseTableName="location" constraintName="fk_location_meterreadingid"/>-->
+<!--        <dropColumn tableName="location" columnName="meter_reading_id"/>-->
+<!--    </changeSet>-->
 
-    <changeSet id="2.9" author="vinayvarma">
-        <addColumn tableName="location">
-        <column name="meter_readingid" type="int">
-        </column>
-    </addColumn>
-        <addForeignKeyConstraint baseTableName="location" baseColumnNames="meter_readingid" constraintName="fk_location_meterreadingid" referencedTableName="meterreading"
-                                 referencedColumnNames="id" onDelete="CASCADE"/>
+<!--    <changeSet id="2.9" author="vinayvarma">-->
+<!--        <addColumn tableName="location">-->
+<!--        <column name="meter_readingid" type="int">-->
+<!--        </column>-->
+<!--    </addColumn>-->
+<!--        <addForeignKeyConstraint baseTableName="location" baseColumnNames="meter_readingid" constraintName="fk_location_meterreadingid" referencedTableName="meterreading"-->
+<!--                                 referencedColumnNames="id" onDelete="CASCADE"/>-->
 
-        <update tableName="location">
-            <column name="meter_readingid" value="204"/>
-            <where>id='117'</where>
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="204"/>-->
+<!--            <where>id='117'</where>-->
 
 
-        </update>
-        <update tableName="location">
-        <column name="meter_readingid" value="201"/>
-        <where>id='118'</where>
-        </update>
-        <update tableName="location">
-            <column name="meter_readingid" value="202"/>
-            <where>id='119'</where>
-        </update>
-        <update tableName="location">
-            <column name="meter_readingid" value="203"/>
-            <where>id='120'</where>
-        </update>
-        <update tableName="location">
-            <column name="meter_readingid" value="204"/>
-            <where>id='121'</where>
-        </update>
-        <update tableName="location">
-            <column name="meter_readingid" value="205"/>
-            <where>id='122'</where>
-        </update>
+<!--        </update>-->
+<!--        <update tableName="location">-->
+<!--        <column name="meter_readingid" value="201"/>-->
+<!--        <where>id='118'</where>-->
+<!--        </update>-->
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="202"/>-->
+<!--            <where>id='119'</where>-->
+<!--        </update>-->
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="203"/>-->
+<!--            <where>id='120'</where>-->
+<!--        </update>-->
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="204"/>-->
+<!--            <where>id='121'</where>-->
+<!--        </update>-->
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="205"/>-->
+<!--            <where>id='122'</where>-->
+<!--        </update>-->
 
-    </changeSet>
+<!--    </changeSet>-->
 
-    <changeSet id="2.11" author="vinayvarma">
-        <update tableName="location">
-            <column name="meter_readingid" value="206"/>
-            <where>id='121'</where>
-        </update>
-    </changeSet>
-    
+<!--    <changeSet id="2.11" author="vinayvarma">-->
+<!--        <update tableName="location">-->
+<!--            <column name="meter_readingid" value="206"/>-->
+<!--            <where>id='121'</where>-->
+<!--        </update>-->
+<!--    </changeSet>-->
+<!--    -->
     <changeSet id="2.12" author="vinayvarma">
         <dropForeignKeyConstraint baseTableName="location" constraintName="fk_location_meterreadingid"/>
         <dropColumn tableName="location" columnName="meter_readingid"/>
@@ -238,29 +238,29 @@
                                  referencedColumnNames="id" onDelete="CASCADE"/>
 
         <update tableName="location">
-            <column name="meter_readingid" value="204"/>
+            <column name="meter_readingid" value="205"/>
             <where>id='117'</where>
 
 
         </update>
         <update tableName="location">
-            <column name="meter_readingid" value="205"/>
+            <column name="meter_readingid" value="206"/>
             <where>id='118'</where>
         </update>
         <update tableName="location">
-            <column name="meter_readingid" value="200"/>
+            <column name="meter_readingid" value="207"/>
             <where>id='119'</where>
         </update>
         <update tableName="location">
-            <column name="meter_readingid" value="201"/>
+            <column name="meter_readingid" value="208"/>
             <where>id='120'</where>
         </update>
         <update tableName="location">
-            <column name="meter_readingid" value="202"/>
+            <column name="meter_readingid" value="209"/>
             <where>id='121'</where>
         </update>
         <update tableName="location">
-            <column name="meter_readingid" value="203"/>
+            <column name="meter_readingid" value="210"/>
             <where>id='122'</where>
         </update>
     </changeSet>
